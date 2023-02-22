@@ -15,6 +15,6 @@ import { BannersModule } from '@elewa-group/features/components/banners'
     SocialImpactHeroSectionComponent,
     SocialImpactBeyondBusinessComponent,
   ],
-  exports: [SocialImpactPageComponent],
+  exports: [SocialImpactPageComponent, SocialImpactBeyondBusinessComponent],
 })
 export class SocialImpactModule {}
