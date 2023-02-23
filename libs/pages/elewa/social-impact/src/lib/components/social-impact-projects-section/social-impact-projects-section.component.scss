@@ -1,0 +1,17 @@
+#social-impact-project-section {
+    display: flex;
+    flex-direction: column;
+
+    #our-impact-projects-header {
+        text-align: center;
+        font-family: var(  --elewa-group-website-dmsans-medium);
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+    #horizontal-list {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+    }
+
+}
