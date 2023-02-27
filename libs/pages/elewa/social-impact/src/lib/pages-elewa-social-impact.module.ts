@@ -10,7 +10,7 @@ import { SocialImpactHeroSectionComponent } from './components/social-impact-her
 import { SocialImpactCooperativeSectionComponent } from './components/social-impact-cooperative-section/social-impact-cooperative-section.component';
 
 import { SocialImpactPageComponent } from './pages/social-impact-page/social-impact-page.component';
-
+import { BeyondBusinessComponent } from './components/beyond-business/beyond-business.component';
 import { SocialImpactRoutingModule } from './social-impact.routing';
 import { SocialImpactOpenKnowledgeComponent } from './components/social-impact-open-knowledge/social-impact-open-knowledge.component';
 import { SocialImpactProjectsSectionComponent } from './components/social-impact-projects-section/social-impact-projects-section.component';
@@ -30,6 +30,7 @@ import { SocialImpactProjectsSectionComponent } from './components/social-impact
     SocialImpactOpenKnowledgeComponent,
     SocialImpactCooperativeSectionComponent,
     SocialImpactProjectsSectionComponent,
+    BeyondBusinessComponent
   ],
   exports: [SocialImpactPageComponent],
 })
