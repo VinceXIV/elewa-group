@@ -4,14 +4,35 @@
 
     #our-impact-projects-header {
         text-align: center;
-        font-family: var(  --elewa-group-website-dmsans-medium);
+        font-family: var(--elewa-group-website-dmsans-medium);
         padding-top: 3rem;
         padding-bottom: 3rem;
+        width: none;
+    }
+
+    #horizontal-list-container {
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        padding: 2rem;
+    }
+}
+
+
+// RESPONSIVENESS 
+
+@media screen and (max-width: 60rem){
+    #social-impact-project-section {
+   
+        #our-impact-projects-header {
+            font-size: 1.7rem;
+        }
     }
 
     #horizontal-list {
-        padding-top: 3rem;
-        padding-bottom: 3rem;
+        align-self: center;
     }
 
+    #horizontal-list-container {
+        width: 100vw;
+    }
 }
