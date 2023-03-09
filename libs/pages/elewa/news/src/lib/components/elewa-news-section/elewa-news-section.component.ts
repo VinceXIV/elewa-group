@@ -28,4 +28,21 @@ export class ElewaNewsSectionComponent {
       {image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-N12wOMy-iPxJQOg_D_FHK5Qsu1NoHVNBHA&usqp=CAU', timestamp: '08:43', title: `You haven't taken my life`, body: '', topic: 'elewa'},
       {image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtMBs2IlGh-6A0MUjuvzlEcgCjHKZwEIe1Jf-a4888atbcHQvsUfoTwxPjIQgw4whSOhE&usqp=CAU', timestamp: '08:43', title: `Like, what the helll am I doing right`, body: '', topic: 'italanta'}
     ]
+
+  activeTopic = 'all-news'
+
+  getNews() :object[] {
+    if(this.activeTopic == 'all-news'){
+      return this.articlelists;
+    }
+
+    return this.articlelists.filter(article => {
+      return article.topic == this.activeTopic;
+    })
+  }
+
+  makeActive(topic: string){
+    this.activeTopic = topic
+    console.log(this.getNews())
+  }
 }
