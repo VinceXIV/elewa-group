@@ -31,7 +31,7 @@ export class ElewaNewsSectionComponent {
 
   activeTopic = 'all-news'
 
-  getNews() :object[] {
+  getNews() :{image: string, timestamp: string, title: string, body: string}[] {
     if(this.activeTopic == 'all-news'){
       return this.articlelists;
     }
