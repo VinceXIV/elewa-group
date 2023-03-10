@@ -31,17 +31,17 @@ export class ElewaNewsSectionComponent {
 
   @Input() activeTopic = 'all-news'
 
-  getNews() :{image: string, timestamp: string, title: string, body: string}[] {
-    if(this.activeTopic == 'all-news'){
+  makeActive(topic: string){
+    this.activeTopic = topic
+  }
+
+  getNews(activeTopic: string) :{image: string, timestamp: string, title: string, body: string}[] {
+    if(activeTopic == 'all-news'){
       return this.articlelists;
     }
 
     return this.articlelists.filter(article => {
-      return article.topic == this.activeTopic;
+      return article.topic == activeTopic;
     })
-  }
-
-  makeActive(topic: string){
-    this.activeTopic = topic
   }
 }
