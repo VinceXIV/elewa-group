@@ -7,11 +7,6 @@
         <button  (click)="makeActive('venture-labs')">VentureLabs</button>
         <button  (click)="makeActive('press')">Press</button>
     </div>
-    <div *ngIf="getNews()">
-
-        <elewa-group-elewa-group-article-list
-            [articles]="getNews()"
-        >
-        </elewa-group-elewa-group-article-list>
-    </div>
+    
+    <elewa-group-elewa-group-article-list [articles]="getNews()"></elewa-group-elewa-group-article-list>
 </div>
