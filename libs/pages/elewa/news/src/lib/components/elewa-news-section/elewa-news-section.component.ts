@@ -29,7 +29,7 @@ export class ElewaNewsSectionComponent {
       {image: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTtMBs2IlGh-6A0MUjuvzlEcgCjHKZwEIe1Jf-a4888atbcHQvsUfoTwxPjIQgw4whSOhE&usqp=CAU', timestamp: '08:43', title: `Like, what the helll am I doing right`, body: '', topic: 'italanta'}
     ]
 
-  activeTopic = 'all-news'
+  @Input() activeTopic = 'all-news'
 
   getNews() :{image: string, timestamp: string, title: string, body: string}[] {
     if(this.activeTopic == 'all-news'){
@@ -43,6 +43,5 @@ export class ElewaNewsSectionComponent {
 
   makeActive(topic: string){
     this.activeTopic = topic
-    console.log(this.getNews())
   }
 }
