@@ -1,3 +1,28 @@
-#elewa-group-elewa-news-section .active {
-    background-color: blue;
+#elewa-group-elewa-news-section #news-section-options {
+    display: flex;
+    gap: 0.5rem;
+}
+
+#elewa-group-elewa-news-section button {
+    outline: none;
+    border: 0.1rem solid black;
+    cursor: pointer;
+    padding-top: 0.3rem;
+    padding-bottom: 0.3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+}
+
+#elewa-group-elewa-news-section button:hover {
+    color: white;
+    background-color: black;
+}
+
+#elewa-group-elewa-news-section button.active {
+    color: white;
+    background-color: black;
 }
