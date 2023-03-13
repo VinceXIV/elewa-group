@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Article } from 'libs/features/components/ui-lists/src/lib/elewa-group-article-list/elewa-group-article-list.component';
 
 @Component({
   selector: 'elewa-group-elewa-news-section',
@@ -35,7 +36,7 @@ export class ElewaNewsSectionComponent {
     this.activeTopic = topic
   }
 
-  getNews(activeTopic: string) :{image: string, timestamp: string, title: string, body: string}[] {
+  getNews(activeTopic: string) :Article[] {
     if(activeTopic == 'all-news'){
       return this.articlelists;
     }
